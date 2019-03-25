@@ -1,0 +1,27 @@
+* Personal Assistant chatbot
+** Use cases:
+- Set reminders
+- Periodically remind me to drink water/stretch/take a break etc.
+- Make appointments in a calendar (no reminder needed)
+- Change reminders and appointments
+- Set appointments done
+- Print a daily rundown
+** Assets
+*** A calendar abstraction
+*** A flag to make it a reminder
+*** A flag to make it periodical
+*** A flag to make it done
+*** An object to write the daily rundown (exclude stuff marked done or periodical, unless otherwise specified)
+** NLP scaffolding
+*** Understand multiple forms of "remind me to"
+*** Understand multiple forms of "make an appointment"
+*** Understand multiple forms of "periodically" <-- Make the default period one hour.
+*** Understand multiple forms of marking something done
+** Reminder
+- Remind me to go to the dentist at 12pm
+- Set me a reminder to go to the dentist at noon
+- I will have a visit to the dentist at 12pm
+- Tell me at 11:05 to go to the dentist (knows what hh:mm means)
+- Notify me to go to the dentist at 13 o'clock (am, pm and 24 hour as well)
+- Send me a notice to visit the dentist at 12 in the morning
+- Give me a shout/note/buzz/notice to go to the dentist at 12 (said in the morning, it will choose the earliest matching case)
