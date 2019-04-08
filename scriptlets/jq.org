@@ -1,0 +1,68 @@
+#+begin_src shell
+results.json jq -s '.[].intent | "\(.name),\(.confidence)"' | tr -d '"' | awk 'BEGIN { print "intent,confidence" }; {print $0}' |column -t -s ,
+#+end_src
+* JSON elements 
+** {Object} (a.k.a dictionary or hash)
+** [Array]
+** "String" (or 'String')
+* JSON syntax
+** "key": "value" (or key:"value" or key:num)
+- Data is in key/value pairs, separated by a colon
+** {object1},{object2}
+- Elements are separated by commas
+- EVERYWHERE! ({"key":"value", "key2":"value2"}, array["key3:value3", "key4":"value4"]) etc.
+* Jq will parse this for you
+** Find elements in this tree based on your rules
+** Pretty print the elements based on some other rules
+** Modify given elements, again, according to your rules
+* Rules
+Consult the following cheatsheet for a more detailed explanation:
+https://gist.github.com/olih/f7437fb6962fb3ee9fe95bda8d2c8fa4
+** . - the most basic one, print it all
+** {} - print all in an object
+** [] - print all in an array
+** + - add or concatenate
+** - subtract or give difference of sets
+** | - chain commands
+* It has some builtin functions too
+** length - size of selected element
+** keys - display all keys
+** map - maps 
+** reduce element as var (base_element; expression)
+** (expressions) - it will be evaluated as an expression with variables and functions
+** add - concatenate arrays
+** flatten - flatten an array
+** range(num;num) - creates a range of numbers
+** type - gives the type of an item
+** min - minimum value of an arrays
+** unique - remove duplicates
+** reverse - reverse an array
+** del - delete elements
+** select - filter out by value (as in key/value pair)
+** split - split string between the defined character (if you give " ", it will give back words)
+** transpose - accepts two arrays and makes a new array of key/value pairs from the elements of the first array as keys and the elements of the second as values
+* We have conditionals
+{object}
+| if condition then
+    action
+elif
+    action
+else
+    action
+end
+* We can define functions
+  def function(argument): define conditional here
+* Examples
+
+#+begin_src shell
+< results.json jq -s '.[].intent.name, .[].intent.confidence'
+#+end_src
+
+#+begin_src shell
+< results.json jq -s '.[].intent | "\(.name), \(.confidence)"'
+#+end_src
+
+#+begin_src shell
+#< results.json jq -s 'map(.entities[] | type)'
+#+end_src
+

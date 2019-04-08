@@ -1,0 +1,425 @@
+{
+  "intent": {
+    "name": "delete_reminder",
+    "confidence": 0.46501803575703393
+  },
+  "entities": [
+    {
+      "start": 29,
+      "end": 41,
+      "value": "9 pm tomorrow",
+      "entity": "datetime",
+      "confidence": 0.9287450458068371,
+      "extractor": "ner_crf"
+    },
+    {
+      "start": 45,
+      "end": 61,
+      "value": "go to the cinema",
+      "entity": "action",
+      "confidence": 0.4136431700360541,
+      "extractor": "ner_crf"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "delete_reminder",
+      "confidence": 0.46501803575703393
+    },
+    {
+      "name": "ask_reminder",
+      "confidence": 0.3867972998594402
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.06786272262002743
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.049264399344955835
+    },
+    {
+      "name": "greet",
+      "confidence": 0.03105754241854246
+    }
+  ],
+  "text": "i want to set a reminder for 9pm tomorrow to go to the cinema. "
+}
+{
+  "intent": {
+    "name": "ask_reminder",
+    "confidence": 0.5352177036201651
+  },
+  "entities": [
+    {
+      "start": 13,
+      "end": 53,
+      "value": "make an appointment with the hairdresser",
+      "entity": "action",
+      "confidence": 0.8428115602931303,
+      "extractor": "ner_crf"
+    },
+    {
+      "start": 57,
+      "end": 61,
+      "value": "noon",
+      "entity": "datetime",
+      "confidence": 0.6466266986601907,
+      "extractor": "ner_crf"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "ask_reminder",
+      "confidence": 0.5352177036201651
+    },
+    {
+      "name": "delete_reminder",
+      "confidence": 0.4120348164443504
+    },
+    {
+      "name": "greet",
+      "confidence": 0.02035373684364067
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.02008149776512363
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.012312245326720225
+    }
+  ],
+  "text": "remind me to make an appointment with the hairdresser at noon tomorrow. "
+}
+{
+  "intent": {
+    "name": "delete_reminder",
+    "confidence": 0.5088388200045271
+  },
+  "entities": [
+    {
+      "start": 19,
+      "end": 42,
+      "value": "7 o'clock on the 5th of",
+      "entity": "datetime",
+      "confidence": 0.4858694988933933,
+      "extractor": "ner_crf"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "delete_reminder",
+      "confidence": 0.5088388200045271
+    },
+    {
+      "name": "ask_reminder",
+      "confidence": 0.4168704066893145
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.03935283746144388
+    },
+    {
+      "name": "greet",
+      "confidence": 0.023309851542929885
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.011628084301784757
+    }
+  ],
+  "text": "set a reminder for 7 o'clock on the 5th of december to make breakfast for lisa. "
+}
+{
+  "intent": {
+    "name": "ask_reminder",
+    "confidence": 0.4908982327373512
+  },
+  "entities": [
+    {
+      "start": 13,
+      "end": 32,
+      "value": "take down the trash",
+      "entity": "action",
+      "confidence": 0.9033165211073637,
+      "extractor": "ner_crf"
+    },
+    {
+      "start": 33,
+      "end": 49,
+      "value": "tomorrow morning",
+      "entity": "datetime",
+      "confidence": 0.454434656265833,
+      "extractor": "ner_crf"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "ask_reminder",
+      "confidence": 0.4908982327373512
+    },
+    {
+      "name": "delete_reminder",
+      "confidence": 0.3869770207091854
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.05453891526670521
+    },
+    {
+      "name": "greet",
+      "confidence": 0.04002429650279189
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.02756153478396663
+    }
+  ],
+  "text": "remind me to take down the trash tomorrow morning. "
+}
+{
+  "intent": {
+    "name": "ask_reminder",
+    "confidence": 0.47085627515952505
+  },
+  "entities": [
+    {
+      "start": 51,
+      "end": 55,
+      "value": "4 pm .",
+      "entity": "datetime",
+      "confidence": 0.9105625513949753,
+      "extractor": "ner_crf"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "ask_reminder",
+      "confidence": 0.47085627515952505
+    },
+    {
+      "name": "delete_reminder",
+      "confidence": 0.37144137151918005
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.10303546429730928
+    },
+    {
+      "name": "greet",
+      "confidence": 0.029594161546082874
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.02507272747790271
+    }
+  ],
+  "text": "give me a notice to create a playlist for mandy at 4pm. "
+}
+{
+  "intent": {
+    "name": "delete_reminder",
+    "confidence": 0.43976816143731523
+  },
+  "entities": [
+    {
+      "start": 13,
+      "end": 26,
+      "value": "never give up",
+      "entity": "action",
+      "confidence": 0.8256410466161522,
+      "extractor": "ner_crf"
+    },
+    {
+      "start": 30,
+      "end": 48,
+      "value": "6 o'clock tonight .",
+      "entity": "datetime",
+      "confidence": 0.5421162620767854,
+      "extractor": "ner_crf"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "delete_reminder",
+      "confidence": 0.43976816143731523
+    },
+    {
+      "name": "ask_reminder",
+      "confidence": 0.3890261063137242
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.0752337673559166
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.06254291850606286
+    },
+    {
+      "name": "greet",
+      "confidence": 0.0334290463869809
+    }
+  ],
+  "text": "remind me to never give up at 6 o'clock tonight. "
+}
+{
+  "intent": {
+    "name": "delete_reminder",
+    "confidence": 0.5144186350522424
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "delete_reminder",
+      "confidence": 0.5144186350522424
+    },
+    {
+      "name": "ask_reminder",
+      "confidence": 0.17800226373378078
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.17379903460047946
+    },
+    {
+      "name": "greet",
+      "confidence": 0.07207469923945135
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.06170536737404606
+    }
+  ],
+  "text": "yes, i meant that. "
+}
+{
+  "intent": {
+    "name": "goodbye",
+    "confidence": 0.35919982180840754
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "goodbye",
+      "confidence": 0.35919982180840754
+    },
+    {
+      "name": "greet",
+      "confidence": 0.3036358359541726
+    },
+    {
+      "name": "delete_reminder",
+      "confidence": 0.1487672114366143
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.1341098351640487
+    },
+    {
+      "name": "ask_reminder",
+      "confidence": 0.05428729563675626
+    }
+  ],
+  "text": "nope. "
+}
+{
+  "intent": {
+    "name": "delete_reminder",
+    "confidence": 0.41924382444408914
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "delete_reminder",
+      "confidence": 0.41924382444408914
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.2795759623456333
+    },
+    {
+      "name": "greet",
+      "confidence": 0.13487321496612537
+    },
+    {
+      "name": "ask_reminder",
+      "confidence": 0.09390440838308849
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.07240258986106367
+    }
+  ],
+  "text": "no way! "
+}
+{
+  "intent": {
+    "name": "delete_reminder",
+    "confidence": 0.319659660655026
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "delete_reminder",
+      "confidence": 0.319659660655026
+    },
+    {
+      "name": "greet",
+      "confidence": 0.2577145176998273
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.15425526457030841
+    },
+    {
+      "name": "ask_reminder",
+      "confidence": 0.153780437470418
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.11459011960442039
+    }
+  ],
+  "text": "hi there, noam. "
+}
+{
+  "intent": {
+    "name": "ask_reminder",
+    "confidence": 0.38308178254461356
+  },
+  "entities": [
+    {
+      "start": 11,
+      "end": 15,
+      "value": "meet",
+      "entity": "action",
+      "confidence": 0.4481064695329739,
+      "extractor": "ner_crf"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "ask_reminder",
+      "confidence": 0.38308178254461356
+    },
+    {
+      "name": "delete_reminder",
+      "confidence": 0.29486352632510654
+    },
+    {
+      "name": "goodbye",
+      "confidence": 0.1629711393767462
+    },
+    {
+      "name": "thanks",
+      "confidence": 0.10173819483445325
+    },
+    {
+      "name": "greet",
+      "confidence": 0.05734535691908052
+    }
+  ],
+  "text": "pleased to meet you, noam. "
+}
