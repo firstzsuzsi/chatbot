@@ -1,0 +1,35 @@
+%YAML 1.1
+---
+actions:
+- utter_summary
+- set_reminder
+- utter_greet
+- utter_goodbye
+entities:
+- action
+- datetime
+intents:
+- ask_reminder
+- delete_reminder
+- greet
+- affirmation
+- negation
+- thanks
+- goodbye
+slots:
+  action:
+    type: text
+templates:
+  utter_goodbye:
+  - text: Ta-ta!
+  - text: Bye bye. :(
+  - text: Talk to you later.
+  - text: Have a nice day!
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: Hi there, what are you up to?
+  - text: Hiya, what should I remind you to do?
+  utter_summary:
+  - text: So you want me to do this and this, is it right?
+  - text: Just to clarify. You want me to do this and this, correct?
+  - text: Okay, so I will do this an this, is that what you wanted?

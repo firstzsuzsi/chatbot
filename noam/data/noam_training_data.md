@@ -43,7 +43,7 @@
 - do not notify me of the [meeting with the cleaning staff](action) [next morning](datetime)
 - delete the notification for [dress rehearsal at tina's high school](action) for [6 pm tomorrow](datetime)
 
-## Affirmation
+## intent: affirmation
 - yes
 - yes, that is it
 - that's it
@@ -52,6 +52,13 @@
 - yep
 - u-huh
 - mh-hmm
+
+## intent: negation
+- no
+- nope
+- naw
+- i meant
+- you've got it wrong
 
 ## intent:thanks
 - thank you

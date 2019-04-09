@@ -544,36 +544,56 @@
         "text": "delete the notification for dress rehearsal at tina's high school for 6 pm tomorrow"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "yes"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "yes, that is it"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "that's it"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "yes, i meant that"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "yup"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "yep"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "u-huh"
       },
       {
-        "intent": "delete_reminder",
+        "intent": "affirmation",
         "text": "mh-hmm"
+      },
+      {
+        "intent": "negation",
+        "text": "no"
+      },
+      {
+        "intent": "negation",
+        "text": "nope"
+      },
+      {
+        "intent": "negation",
+        "text": "naw"
+      },
+      {
+        "intent": "negation",
+        "text": "i meant"
+      },
+      {
+        "intent": "negation",
+        "text": "you've got it wrong"
       },
       {
         "intent": "thanks",

@@ -1,0 +1,47 @@
+%YAML 1.1
+---
+actions:
+- utter_summary
+- set_reminder
+- utter_greet
+- utter_goodbye
+config:
+  store_entities_as_slots: true
+entities:
+- action
+- datetime
+forms: []
+intents:
+- ask_reminder:
+    use_entities: true
+- delete_reminder:
+    use_entities: true
+- greet:
+    use_entities: true
+- affirmation:
+    use_entities: true
+- negation:
+    use_entities: true
+- thanks:
+    use_entities: true
+- goodbye:
+    use_entities: true
+slots:
+  action:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_goodbye:
+  - text: Ta-ta!
+  - text: Bye bye. :(
+  - text: Talk to you later.
+  - text: Have a nice day!
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: Hi there, what are you up to?
+  - text: Hiya, what should I remind you to do?
+  utter_summary:
+  - text: So you want me to do this and this, is it right?
+  - text: Just to clarify. You want me to do this and this, correct?
+  - text: Okay, so I will do this an this, is that what you wanted?
