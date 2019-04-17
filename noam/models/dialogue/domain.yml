@@ -1,10 +1,18 @@
 %YAML 1.1
 ---
 actions:
+- utter_affirm
+- utter_escalate
+- utter_fallback
+- utter_goodbye
+- utter_greet
+- utter_negated
+- utter_sorry
+- utter_state
 - utter_summary
 - set_reminder
-- utter_greet
-- utter_goodbye
+- utter_welcome
+- reset_slot
 config:
   store_entities_as_slots: true
 entities:
@@ -12,15 +20,23 @@ entities:
 - datetime
 forms: []
 intents:
+- negation:
+    use_entities: true
+- how_are_you:
+    use_entities: true
+- insult:
+    use_entities: true
 - ask_reminder:
+    use_entities: true
+- affirmation:
+    use_entities: true
+- fallback:
     use_entities: true
 - delete_reminder:
     use_entities: true
 - greet:
     use_entities: true
-- affirmation:
-    use_entities: true
-- negation:
+- escalate:
     use_entities: true
 - thanks:
     use_entities: true
@@ -31,7 +47,29 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  datetime:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
+  utter_affirm:
+  - text: Here you go.
+  - text: All done.
+  - text: Perfecto mundo.
+  utter_escalate:
+  - text: Okay, okay. I get it. I am just a robot. Here, you can talk to her, just
+      drop a mail at noambotsky@gmail.com.
+  - text: As you wish. Send a message to noambotsky@gmail.com
+  - text: I thought we had a nice chat here. Oh well. Send an e-mail to noambotsky@gmail.com.
+  utter_fallback:
+  - text: I think something went bad. Ask me something like Remind me to go to the
+      Queens's tea party at 4pm, or Delete reminder for my date with Jeff Goldblum.
+  - text: Wait, what? Okay, my job is to remind you of things and delete reminders.
+      Tell me something like I will have a shave at Mr. Todd's tomorrow morning, or
+      Delete all my appointments from now.
+  - text: Oh, dear. I take this job very seriously, and we have some protocols here.
+      For the best results ask something like Set a reminder to catch the train to
+      Hogwarts at 7am next Monday or Delete reminder for tea party in Boston.
   utter_goodbye:
   - text: Ta-ta!
   - text: Bye bye. :(
@@ -41,7 +79,29 @@ templates:
   - text: Hello! How can I help?
   - text: Hi there, what are you up to?
   - text: Hiya, what should I remind you to do?
+  utter_negated:
+  - text: Okay, so what would you like me to do?
+  - text: Sorry, can you repeat what you wanted a bit more simple?
+  - text: My bad. What was it you wanted, again?
+  utter_sorry:
+  - text: I am sorry that I couldn't help. Maybe you could start over with a simpler
+      sentence along the lines of Remind me to kick you in the bum at 6pm. Or contact
+      my developer at noambotsky@gmail.com.
+  - text: My apologies. I know it can be frustrating when you cannot get what you
+      want. Maybe you can try again with a simpler request or talk to my developer
+      at noambotsky@gmail.com.
+  - text: Okay, I see this is not working. Sometimes I just get confused. This is
+      what I can do set reminders and delete reminders. If I am bad at that, contact
+      the human behind all this at noambotsky@gmail.com.
+  utter_state:
+  - text: Buzzing with the rythm of ones and zeros. Pa-papa-pam-pam.
+  - text: Sometimes the old Y2K injury is acting up, but I feel fine, thanks.
+  - text: As sunny as the day is. Which is always very, given that I am no weatherbot.
   utter_summary:
   - text: So you want me to do this and this, is it right?
   - text: Just to clarify. You want me to do this and this, correct?
   - text: Okay, so I will do this an this, is that what you wanted?
+  utter_welcome:
+  - text: Sure thing. :D
+  - text: Happy to help.
+  - text: You're very welcome.

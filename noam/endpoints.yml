@@ -1,2 +1,2 @@
-model:
-    url: "/home/zsuzsi/study/chatbot/noam/models/nlu/default/noam_basic"
+action_endpoint:
+  url: "http://localhost:5055/webhook"

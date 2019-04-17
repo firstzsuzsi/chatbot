@@ -46,6 +46,46 @@
         "text": "hola"
       },
       {
+        "intent": "how_are_you",
+        "text": "how are you"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how are you doing"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how you doing"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how things are"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how do you do"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how's it hanging"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "how is it on your side"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "what's cookin, good lookin"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "howdy"
+      },
+      {
+        "intent": "how_are_you",
+        "text": "hiya"
+      },
+      {
         "intent": "ask_reminder",
         "entities": [
           {
@@ -544,6 +584,86 @@
         "text": "delete the notification for dress rehearsal at tina's high school for 6 pm tomorrow"
       },
       {
+        "intent": "fallback",
+        "text": "make me a coffee."
+      },
+      {
+        "intent": "fallback",
+        "text": "this is the beginning of a beautiful friendship."
+      },
+      {
+        "intent": "fallback",
+        "text": "no one competes with the rock cruncher."
+      },
+      {
+        "intent": "fallback",
+        "text": "my name is bond, james bond."
+      },
+      {
+        "intent": "fallback",
+        "text": "what buses go to the london eye from trafalgar square?"
+      },
+      {
+        "intent": "fallback",
+        "text": "i ate his liver with some fava beans and a nice chianti."
+      },
+      {
+        "intent": "fallback",
+        "text": "the night was cold and humid, just like in all other gothic horror stories."
+      },
+      {
+        "intent": "fallback",
+        "text": "falcon punch!"
+      },
+      {
+        "intent": "fallback",
+        "text": "i want to eat a burrito."
+      },
+      {
+        "intent": "fallback",
+        "text": "mrs. robinson, you're trying to seduce me."
+      },
+      {
+        "intent": "fallback",
+        "text": "find me recipes for strawberry souffle."
+      },
+      {
+        "intent": "fallback",
+        "text": "all work and no play makes johnny a dull boy."
+      },
+      {
+        "intent": "fallback",
+        "text": "get me a box of chocolate and a bouquet of flowers."
+      },
+      {
+        "intent": "fallback",
+        "text": "soylent green is people!"
+      },
+      {
+        "intent": "fallback",
+        "text": "mind your steps."
+      },
+      {
+        "intent": "fallback",
+        "text": "a martini, shaken, not stirred."
+      },
+      {
+        "intent": "fallback",
+        "text": "this sentence is not meant to make any sense, yet it does."
+      },
+      {
+        "intent": "fallback",
+        "text": "nobody puts baby in the corner."
+      },
+      {
+        "intent": "fallback",
+        "text": "i am out of ideas and definitely in need of a sizable corpus."
+      },
+      {
+        "intent": "fallback",
+        "text": "of all the gin joints in all the towns in all the world, she walks into mine."
+      },
+      {
         "intent": "affirmation",
         "text": "yes"
       },
@@ -554,6 +674,10 @@
       {
         "intent": "affirmation",
         "text": "that's it"
+      },
+      {
+        "intent": "affirmation",
+        "text": "indeed"
       },
       {
         "intent": "affirmation",
@@ -585,15 +709,27 @@
       },
       {
         "intent": "negation",
+        "text": "na"
+      },
+      {
+        "intent": "negation",
         "text": "naw"
       },
       {
         "intent": "negation",
-        "text": "i meant"
+        "text": "i meant something else"
       },
       {
         "intent": "negation",
         "text": "you've got it wrong"
+      },
+      {
+        "intent": "negation",
+        "text": "noop"
+      },
+      {
+        "intent": "negation",
+        "text": "nu-uh"
       },
       {
         "intent": "thanks",
@@ -642,6 +778,122 @@
       {
         "intent": "thanks",
         "text": "you are a lifesaver"
+      },
+      {
+        "intent": "insult",
+        "text": "you are bad"
+      },
+      {
+        "intent": "insult",
+        "text": "now I am angry"
+      },
+      {
+        "intent": "insult",
+        "text": "you are making me angry"
+      },
+      {
+        "intent": "insult",
+        "text": "that is infuriating"
+      },
+      {
+        "intent": "insult",
+        "text": "you are awful"
+      },
+      {
+        "intent": "insult",
+        "text": "stop that"
+      },
+      {
+        "intent": "insult",
+        "text": "now you are just repeating yourself"
+      },
+      {
+        "intent": "insult",
+        "text": "you suck at this"
+      },
+      {
+        "intent": "insult",
+        "text": "i've had enough"
+      },
+      {
+        "intent": "insult",
+        "text": "i hate you"
+      },
+      {
+        "intent": "insult",
+        "text": "you are stupid"
+      },
+      {
+        "intent": "insult",
+        "text": "you are dumb"
+      },
+      {
+        "intent": "insult",
+        "text": "this sucks"
+      },
+      {
+        "intent": "insult",
+        "text": "damn you"
+      },
+      {
+        "intent": "insult",
+        "text": "you goddamn robot"
+      },
+      {
+        "intent": "insult",
+        "text": "go to hell"
+      },
+      {
+        "intent": "insult",
+        "text": "you are a cunt"
+      },
+      {
+        "intent": "insult",
+        "text": "you son of a bitch"
+      },
+      {
+        "intent": "insult",
+        "text": "fuck yourself"
+      },
+      {
+        "intent": "insult",
+        "text": "fuck you"
+      },
+      {
+        "intent": "insult",
+        "text": "kill yourself"
+      },
+      {
+        "intent": "escalate",
+        "text": "i would like to talk to a human."
+      },
+      {
+        "intent": "escalate",
+        "text": "do you have anybody else I can talk to?"
+      },
+      {
+        "intent": "escalate",
+        "text": "can i talk to someone else?"
+      },
+      {
+        "intent": "escalate",
+        "text": "point me to someone more competent."
+      },
+      {
+        "intent": "escalate",
+        "text": "let me speak to a human."
+      },
+      {
+        "intent": "escalate",
+        "text": "i want to contact customer service"
+      },
+      {
+        "intent": "escalate",
+        "text": "is there anyone else who can help?"
+      },
+      {
+        "intent": "escalate",
+        "text": "is there anyone more qualified?"
       },
       {
         "intent": "goodbye",

@@ -5,16 +5,39 @@
         "action"
       ]
     },
-    "utter_summary": {
+    "utter_negated": {
       "slots": []
     },
     "set_reminder": {
+      "slots": [
+        "action"
+      ]
+    },
+    "action_restart": {
       "slots": []
     },
-    "utter_greet": {
+    "utter_sorry": {
+      "slots": []
+    },
+    "utter_affirm": {
+      "slots": []
+    },
+    "utter_escalate": {
       "slots": []
     },
     "utter_goodbye": {
+      "slots": []
+    },
+    "utter_state": {
+      "slots": []
+    },
+    "utter_summary": {
+      "slots": []
+    },
+    "utter_welcome": {
+      "slots": []
+    },
+    "utter_fallback": {
       "slots": []
     }
   },
@@ -25,11 +48,11 @@
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
-    "rasa_core.policies.keras_policy.KerasPolicy",
-    "rasa_core.policies.memoization.MemoizationPolicy"
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190409-170131",
+  "trained_at": "20190417-195718",
   "rasa_core": "0.13.7",
-  "tensorflow": "1.13.1",
+  "tensorflow": "1.12.0",
   "sklearn": "0.20.3"
 }

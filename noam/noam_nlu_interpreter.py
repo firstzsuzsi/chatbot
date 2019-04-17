@@ -2,7 +2,7 @@ from rasa_nlu.model import Metadata, Interpreter
 import sys
 import json
 
-metadata = "./models/nlu/default/noam_basic/"
+metadata = "/home/zsuzsi/study/chatbot/noam/models/nlu/default/noam_basic/"
 
 def loader(metadata, message):
     interpreter = Interpreter.load(metadata)
