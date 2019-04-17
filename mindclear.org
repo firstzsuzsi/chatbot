@@ -1,0 +1,58 @@
+* Chatbot workflow components
+** Understand what I want
+- tokenization
+- stemming
+- lemmatization
+- pos tagging
+- stop word removal
+- intent and entity identification
+  - model building: example sentences and labeling
+  - training and feedback
+  - get large training sets, labeled
+- ontology and understanding words
+  - information extraction
+  - negation detection
+  - entity disambiguation
+- content classification
+- sentiment analysis
+- generative grammar and syntactic analysis
+- machine learning under the hood
+** Generate a response
+- contact with the source of information
+  - APIs
+  - data mining
+- Formulating a sentence
+  - routes to follow
+  - ask questions
+** Log what is happening
+Learn from mistakes and gather extra training data for future reference
+- The conversations are logged with timestamps (maybe with backtrace too, where the identified intents, entities, and the actions are indicated)
+- Questions that the bot is unable to identify are logged too, in a separate file
+* Tools
+** IBM
+** RASA NLU
+** Google Natural Language API
+** Others to check out: Luis, Wit, Dialogflow, Botkit, Microsof Bot Framework
+** NegEx
+** DEEPEN (NegEx based)
+- Adds dependency relations to improve upon the stuff
+* Noam structure
+** Spellcheck
+** Programmed buttons
+** Use fallback policy (instead of fallback intent)
+** Refine action structure
+*** set reminder
+Use the builtin RASA reminder system
+*** delete reminder
+See if deletion is possible in builtin stuff
+*** summary
+It should use the entities and form an utterance based on them, preferably multiple ones, at random.
+*** escalate to human
+** Give personality
+- likes to help
+- ambitious
+- looks at everything as a learning opportunity
+- curious
+- likes to make chores fun (has a cute way of reminding that will help you to actually do the stuff you set out).
+- knows some jokes
+- can do small talk (but makes it more interesting by turning the schemes upside down)
