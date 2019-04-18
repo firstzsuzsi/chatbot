@@ -9,10 +9,12 @@ actions:
 - utter_negated
 - utter_sorry
 - utter_state
-- utter_summary
 - set_reminder
 - utter_welcome
-- reset_slot
+- reminder_alarm
+- summarize_reminder
+- reassure_reminder
+- utter_delete
 config:
   store_entities_as_slots: true
 entities:
@@ -56,20 +58,22 @@ templates:
   - text: Here you go.
   - text: All done.
   - text: Perfecto mundo.
+  utter_delete:
+  - text: Okay, I will not remind you.
+  - text: Okay, enjoy your free time!
+  - text: Cool, less work for me then. ;)
   utter_escalate:
   - text: Okay, okay. I get it. I am just a robot. Here, you can talk to her, just
       drop a mail at noambotsky@gmail.com.
   - text: As you wish. Send a message to noambotsky@gmail.com
   - text: I thought we had a nice chat here. Oh well. Send an e-mail to noambotsky@gmail.com.
   utter_fallback:
-  - text: I think something went bad. Ask me something like Remind me to go to the
-      Queens's tea party at 4pm, or Delete reminder for my date with Jeff Goldblum.
-  - text: Wait, what? Okay, my job is to remind you of things and delete reminders.
-      Tell me something like I will have a shave at Mr. Todd's tomorrow morning, or
-      Delete all my appointments from now.
-  - text: Oh, dear. I take this job very seriously, and we have some protocols here.
-      For the best results ask something like Set a reminder to catch the train to
-      Hogwarts at 7am next Monday or Delete reminder for tea party in Boston.
+  - buttons:
+    - payload: /ask_reminder
+      title: Set a reminder
+    - payload: /delete_reminder
+      title: Delete a reminder
+    text: This is not working, I'm sorry. What were you trying to do?
   utter_goodbye:
   - text: Ta-ta!
   - text: Bye bye. :(
@@ -97,10 +101,6 @@ templates:
   - text: Buzzing with the rythm of ones and zeros. Pa-papa-pam-pam.
   - text: Sometimes the old Y2K injury is acting up, but I feel fine, thanks.
   - text: As sunny as the day is. Which is always very, given that I am no weatherbot.
-  utter_summary:
-  - text: So you want me to do this and this, is it right?
-  - text: Just to clarify. You want me to do this and this, correct?
-  - text: Okay, so I will do this an this, is that what you wanted?
   utter_welcome:
   - text: Sure thing. :D
   - text: Happy to help.
