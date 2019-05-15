@@ -9,27 +9,36 @@ actions:
 - utter_negated
 - utter_sorry
 - utter_state
-- set_reminder
 - utter_welcome
-- reminder_alarm
+- ask_reminder
 - summarize_reminder
 - reassure_reminder
+- reminder_alarm
+- delete_reminder
+- summarize_delete_reminder
+- reassure_delete_reminder
 - utter_delete
+- utter_tutorial
+- utter_joke
 entities:
 - action
 - datetime
 intents:
-- negation
-- how_are_you
-- insult
-- ask_reminder
-- affirmation
-- fallback
+- set_reminder
 - delete_reminder
+- set_reminder_fallback
+- delete_reminder_fallback
 - greet
-- escalate
-- thanks
 - goodbye
+- thanks
+- affirm
+- negate
+- aggravate
+- escalate
+- tutorial
+- how_are_you
+- joke
+- out_of_scope
 slots:
   action:
     type: text
@@ -54,11 +63,11 @@ templates:
   #     For the best results ask something like Set a reminder to catch the train to
   #     Hogwarts at 7am next Monday or Delete reminder for tea party in Boston.
   utter_fallback:
-    - text: "This is not working, I'm sorry. What were you trying to do?"
+    - text: This is not working, I'm sorry. What were you trying to do?
       buttons:
-        - title: "Set a reminder"
+        - title: Set a reminder
           payload: "/ask_reminder"
-        - title: "Delete a reminder"
+        - title: Delete a reminder
           payload: "/delete_reminder"
   utter_goodbye:
   - text: Ta-ta!
@@ -71,18 +80,12 @@ templates:
   - text: Hiya, what should I remind you to do?
   utter_negated:
   - text: Okay, so what would you like me to do?
-  - text: Sorry, can you repeat what you wanted a bit more simple?
-  - text: My bad. What was it you wanted, again?
+  - text: Sorry, can you repeat what you wanted, bit phrasing it a bit more simple?
+  - text: My bad. What was it that you wanted, again?
   utter_sorry:
-  - text: I am sorry that I couldn't help. Maybe you could start over with a simpler
-      sentence along the lines of Remind me to kick you in the bum at 6pm. Or contact
-      my developer at noambotsky@gmail.com.
-  - text: My apologies. I know it can be frustrating when you cannot get what you
-      want. Maybe you can try again with a simpler request or talk to my developer
-      at noambotsky@gmail.com.
-  - text: Okay, I see this is not working. Sometimes I just get confused. This is
-      what I can do set reminders and delete reminders. If I am bad at that, contact
-      the human behind all this at noambotsky@gmail.com.
+  - text: I see you are angry. I am sorry that I couldn't help. Maybe you could start over with a simpler sentence along the lines of:\ Remind me to kick you in the bum at 6pm. Or contact my developer at noambotsky@gmail.com.
+  - text: My apologies for upsetting you. I know it can be frustrating when you cannot get what you want. Maybe you can start again with telling me to remind you of something and the date and time you want to set the reminder to. Or talk to my developer at noambotsky@gmail.com.
+  - text: I messed up, didn't I? Sometimes I just get confused. My job is to set reminders, If I am bad at that, contact the human behind all this at noambotsky@gmail.com.
   utter_state:
   - text: Buzzing with the rythm of ones and zeros. Pa-papa-pam-pam.
   - text: Sometimes the old Y2K injury is acting up, but I feel fine, thanks.
@@ -90,8 +93,16 @@ templates:
   utter_welcome:
   - text: Sure thing. :D
   - text: Happy to help.
-  - text: You're very welcome.
+  - text: You'\re very welcome.
   utter_delete:
   - Okay, I will not remind you.
   - Okay, enjoy your free time!
   - Cool, less work for me then. ;)
+  utter_tutorial:
+  - I am a personal assistant chatbot. My job for now is to set reminders and delete the ones you want me to. However, I am only on a test drive, so I just pretend to do these. I understand written commands and I am happy to talk to you. You can try chitchating if you want, you might find easter eggs ;).
+  utter_joke:
+  - Why was the android itchy? Roboticks.
+  - What kind or androids do you find in the arctic? Snobots.
+  - Why did the robot run away? It heard an electric can opener.
+  - Why is a robot builder never lonely? She’s always making new friends. 
+  - A robot tried to start a conversation with an attractive waitress, but he wasn't so successful in doing so. The error message read:\ Error:\ failed to establish connection with server. 

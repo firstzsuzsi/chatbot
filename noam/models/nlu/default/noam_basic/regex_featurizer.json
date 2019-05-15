@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "name": "datetime",
+        "pattern": "(( \\d{4}\\W* )?\\d{1,2}(st|nd|rd|th)?( of)? (?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(, \\d{4}\\W)?)?((\\d{4}\\W)?(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?) \\d{1,2}(st|nd|rd|th)?\\b)?( \\d{4}\\W* )?"
+    },
+    {
+        "name": "datetime",
+        "pattern": "(\\d{1,2}:\\d{1,2})?(\\d*:*\\d+ *(a|p)\\.*m\\.*)"
+    },
+    {
+        "name": "datetime",
+        "pattern": "(\\d{4}(\\W|_))?\\d{2}(\\W|_)\\d{2}(\\W|_)(\\d{4}\\W)?"
+    },
+    {
+        "name": "datetime",
+        "pattern": "(mon|tues|wed(nes)?|thur(s)?|fri|sat(ur)?|sun)(day)?"
+    },
+    {
+        "name": "datetime",
+        "pattern": "(quarter|half|\\d{1,2}) (past|to) \\d{1,2}"
+    },
+    {
+        "name": "datetime",
+        "pattern": "(the (day after))?( today|tomorrow)?"
+    },
+    {
+        "name": "datetime",
+        "pattern": "\\d{1,2} o'clock( (in the|at) (morning|afternoon|evening|night))?"
+    },
+    {
+        "name": "greet",
+        "pattern": "[\\w,]* noam"
+    },
+    {
+        "name": "tutorial",
+        "pattern": "can you (\\w* *)*"
+    }
+]

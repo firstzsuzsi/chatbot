@@ -9,12 +9,17 @@ actions:
 - utter_negated
 - utter_sorry
 - utter_state
-- set_reminder
 - utter_welcome
-- reminder_alarm
+- ask_reminder
 - summarize_reminder
 - reassure_reminder
+- reminder_alarm
+- delete_reminder
+- summarize_delete_reminder
+- reassure_delete_reminder
 - utter_delete
+- utter_tutorial
+- utter_joke
 config:
   store_entities_as_slots: true
 entities:
@@ -22,27 +27,35 @@ entities:
 - datetime
 forms: []
 intents:
-- negation:
-    use_entities: true
-- how_are_you:
-    use_entities: true
-- insult:
-    use_entities: true
-- ask_reminder:
-    use_entities: true
-- affirmation:
-    use_entities: true
-- fallback:
+- set_reminder:
     use_entities: true
 - delete_reminder:
     use_entities: true
+- set_reminder_fallback:
+    use_entities: true
+- delete_reminder_fallback:
+    use_entities: true
 - greet:
     use_entities: true
-- escalate:
+- goodbye:
     use_entities: true
 - thanks:
     use_entities: true
-- goodbye:
+- affirm:
+    use_entities: true
+- negate:
+    use_entities: true
+- aggravate:
+    use_entities: true
+- escalate:
+    use_entities: true
+- tutorial:
+    use_entities: true
+- how_are_you:
+    use_entities: true
+- joke:
+    use_entities: true
+- out_of_scope:
     use_entities: true
 slots:
   action:
@@ -83,25 +96,38 @@ templates:
   - text: Hello! How can I help?
   - text: Hi there, what are you up to?
   - text: Hiya, what should I remind you to do?
+  utter_joke:
+  - text: Why was the android itchy? Roboticks.
+  - text: What kind or androids do you find in the arctic? Snobots.
+  - text: Why did the robot run away? It heard an electric can opener.
+  - text: Why is a robot builder never lonely? She’s always making new friends.
+  - text: A robot tried to start a conversation with an attractive waitress, but he
+      wasn't so successful in doing so. The error message read:\ Error:\ failed to
+      establish connection with server.
   utter_negated:
   - text: Okay, so what would you like me to do?
-  - text: Sorry, can you repeat what you wanted a bit more simple?
-  - text: My bad. What was it you wanted, again?
+  - text: Sorry, can you repeat what you wanted, bit phrasing it a bit more simple?
+  - text: My bad. What was it that you wanted, again?
   utter_sorry:
-  - text: I am sorry that I couldn't help. Maybe you could start over with a simpler
-      sentence along the lines of Remind me to kick you in the bum at 6pm. Or contact
+  - text: I see you are angry. I am sorry that I couldn't help. Maybe you could start
+      over with a simpler sentence along the lines of:\ Remind me to kick you in the
+      bum at 6pm. Or contact my developer at noambotsky@gmail.com.
+  - text: My apologies for upsetting you. I know it can be frustrating when you cannot
+      get what you want. Maybe you can start again with telling me to remind you of
+      something and the date and time you want to set the reminder to. Or talk to
       my developer at noambotsky@gmail.com.
-  - text: My apologies. I know it can be frustrating when you cannot get what you
-      want. Maybe you can try again with a simpler request or talk to my developer
-      at noambotsky@gmail.com.
-  - text: Okay, I see this is not working. Sometimes I just get confused. This is
-      what I can do set reminders and delete reminders. If I am bad at that, contact
-      the human behind all this at noambotsky@gmail.com.
+  - text: I messed up, didn't I? Sometimes I just get confused. My job is to set reminders,
+      If I am bad at that, contact the human behind all this at noambotsky@gmail.com.
   utter_state:
   - text: Buzzing with the rythm of ones and zeros. Pa-papa-pam-pam.
   - text: Sometimes the old Y2K injury is acting up, but I feel fine, thanks.
   - text: As sunny as the day is. Which is always very, given that I am no weatherbot.
+  utter_tutorial:
+  - text: I am a personal assistant chatbot. My job for now is to set reminders and
+      delete the ones you want me to. However, I am only on a test drive, so I just
+      pretend to do these. I understand written commands and I am happy to talk to
+      you. You can try chitchating if you want, you might find easter eggs ;).
   utter_welcome:
   - text: Sure thing. :D
   - text: Happy to help.
-  - text: You're very welcome.
+  - text: You'\re very welcome.

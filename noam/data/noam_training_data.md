@@ -1,161 +1,1054 @@
+﻿# Main
+## intent:set_reminder
+- remind me to [buy presents](action) [9am tomorrow](datetime)
+- remind me at [20:45](datetime) to [give the cat dinner](action)
+- remind me at [7am](datetime) about the[meeting with the finance team](action)
+- set reminder to [stretch](action) at [5 o'clock](datetime)
+- set reminder for [dinner with lady kate](action) on [2019.08.08. 10 p.m.](datetime)
+- set reminder about my [date with natasha](action) for [10 pm monday](datetime)
+- set me a reminder to [turn off oven](action) at [quarter past 11](datetime)
+- set me a reminder for [walking the dog](action) at [8 am today](datetime)
+- set reminder at [6:30am](datetime) for [band practice](action)
+- please remind me to [pull carrots](action) [7 a.m. the day after tomorrow](datetime)
+- please remind me on [tuesday](datetime) to [make snacks for robbie](action)
+- please remind me about the [meeting with christian anderson](action) at [9 o'clock thursday morning](datetime)
+- remind me please to [create mailing template](action) on the [10_29_2022](datetime)
+- notify me to [tell the morning shift how the new production line will work](action) [11/05 8 o'clock](datetime)
+- notify me on the [21st of july](datetime) to [bring home cat and dog from the kennel in darcy](action)
+- send me a notification to [write down the action plan for the workshop on the 8th](action) on [2022. 4th november](datetime)
+- send me a notification about the [visit from mum](action) at [10 o'clock monday](datetime)
+- send me a notification [a week from now](datetime) about the [drinks with peter](action)
+- give me a notification at [4 p.m.](datetime) to [delete stuff before 5th of november on google drive](action)
+- give me a notification about [sending the skype invite to david mcarthur](action) at [9 a.m.](datetime)
+- send me a reminder to [go to a run with hubby](action) at [7 o'clock saturday morning](datetime)
+- send me a reminder at [05:05](datetime) to [take out the chicken of the oven](action)
+- send me a reminder on [2019. 2nd of december](datetime) about my [english lesson](action)
+- give me a nudge to [lay out all grilling equipment for the 4th of july party](action) at [1:00pm](datetime)
+- give me a nudge about the [dress rehearsal](action) on [22.11. 10 o'clock](datetime)
+- give me a nudge at [9:00am](datetime) about the [gas bill](action)
+- poke me to [make breakfast](action) at [6:45 a.m.](datetime)
+- tell me to [visit my grandma](action) [tomorrow night](datetime)
+- tell me on the [22nd of august](datetime) to [pay bills](action)
+- send me an alert to [get confirmation of the meeting at 6 on the 14th of april](action) on [2022-11-19 4 pm](datetime)
+- send me an alert at [10 past noon](datetime) to [ring karrie](action)
+- send me an alert about the [call for mary](action) at [2 in the afternoon](datetime)
+- give me an alert to [lay out agenda for every table in the auditorium](action) on the [10 a.m. 23rd of november](datetime)
+- give me an alert at [3 o'clock in the morning next saturday](datetime) to [tell tom to start the stream](action)
+- give me an alert at [4:00 p.m.](datetime) about the [guitar lesson](action)
+- alert me to [give car keys to javier](action) at [03:50 pm](datetime)
+- alert me at [9:25](datetime) to [start spectography](action)
+- send me a notice to [delete 2019.11.22. appointments](action) at [3 pm](datetime)
+- send me a notice about my[obgyn appointment](action) at [8 am](datetime)
+- give me a notice to [delete stuff from pendrive](action) at [7:00 am](datetime)
+- give me a notice at [11 p.m. saturday](datetime) to [print guest list for jake and rosa's wedding](action)
+- give me a notice on [25/04/2020](datetime) about the [invitations](action)
+- send a notification to [remind mr mallory about the dinner at 6](action) at [7:30 am](datetime)
+- send a notification at [10 o'clock in the morning](datetime) to [send e-mail to data science team about video the conference in the afternoon](action)
+- send a notification at [6:00 pm](datetime) about the [house warming party at tess’s new appartment](action)
+- give a notification to [pay the gas bill](action) [5 o'clock in the evening](datetime)
+- give a notification at [half to 9](datetime) to [send manuscript to kevin](action)
+- give a notification about the [magic mike audition](action) on [2019.09.25. 9 a.m.](datetime)
+- give a notification at [5 in the evening](datetime) about the [cake taste testing](action)
+- send a reminder to [order coffee](action) on [11.22.2019.](datetime)
+- send a reminder at [7:40 am](datetime) to [iron the uniforms for nancy and tim for the jubilee](action)
+- send a reminder about the [violin recital](action) on [2023-12-23 1pm](datetime)
+- give a nudge to [try on shirts](action) on [sunday](datetime)
+- give a nudge on [12/15](datetime) to [bathe dog](action)
+- poke to [get nails done](action) on [thursday](datetime)
+- poke [the next day](datetime) to [get groceries](action)
+- tell to [book the tickets for the phantom of the opera](action) on [01.01.](datetime)
+- tell at [10 at night](datetime) to [look up all avengers movies](action)
+- send an alert on [04.13.](datetime) to [delete the bad photos to free up space on camera](action)
+- send an alert about the [practice](action) on [15/03 5 o'clock](datetime)
+- send an alert on [10_11_2023 10 a.m.](datetime) about the [courier](action)
+- give an alert to [leave work](action) at [8 o'clock at night](datetime)
+- give an alert at [04.13. 10 pm](datetime) to [show concept to andy moore](action)
+- give an alert at [6 in the morning](datetime) about the [fair](action)
+- alert to [write e-mails](action) at [2 o'clock in the afternoon](datetime)
+- alert at [2020-12-08](datetime) to [coffee with boss](action)
+- send a notice to [tell maisie the results](action) [tomorrow](datetime)
+- send a notice about the [charity event](action) on [05-07-2019](datetime)
+- give a notice to [remind dad to wash the dishes](action)
+- give a notice on [monday night](datetime) to [send invitations](action)
+- give a notice about the [maths olympics](action) on [2019. 18th of january](datetime)
+- give a notice on [22 may 2020](datetime) about [speech therapy](action)
+- i want you to remind me to [put away the laundry](action) [tomorrow morning](datetime)
+- i want you to remind me at [10 past 1](datetime) to [flip the cake tins](action)
+- send notification to [get rid of old clothes in the big wardrobe](action) at [10:30am](datetime)
+- send notification on [25/04/2020 7am](datetime) about the [breakfast with mrs. cottage](action)
+- give notification to [delete all work e-mails before december 24th](action) at [11:00](datetime) 
+- give notification on [december 28 2019](datetime) to [trash all documents before december 24 2019.](action)
+- give notification about the [team building livechat](action) at [11:35](datetime) 
+- send reminder to [find folder](action) at [15:15](datetime)
+- send reminder about the [notify mr gail to renew his subscription](action)
+- give nudge to [give baby joe his tummy medicine](action) at [noon](datetime)
+- give nudge at [10:00 a.m.](datetime) to [remind mum to take her passport from the table](action)
+- give nudge about the [wash dishes](action) [in the morning](datetime)
+- give nudge [this wednesday](datetime) about the [baby shower](action)
+- poke on [next friday](datetime) to [binge watch game of thrones season 8](action)
+- tell to [fry fish](action) at [half past 2](datetime)
+- send alert to [start writing the essay](action) [in the evening](datetime)
+- send alert on [01.01. 9pm](datetime) about the [appointment with the dog cosmetitian](action)
+- give alert to [fill a page in my journal](action) [tomorrow evening](datetime)
+- give alert [sunday afternoon](datetime) to [give back becky her shirt](action)
+- alert to [confirm meeting with dress company on the 23rd at 5 pm](action) on [22nd of july 2019 9 am](datetime)
+- alert at [2021_03_23](datetime) to [get rid of all work e-mails before 2019_12_24](action)
+- send notice on [05-06-2019 9 am](datetime) to [draw storyboard](action)
+- send notice about the [pinata making workshop](action) on [02/09 4 p.m.](datetime)
+- give notice to [alert the managers about the deadline change](action)[at 12:30](datetime)
+- give notice at [4 o’clock in the afternoon](datetime) to [delete appointments on the 24th of august](action)
+- give notice about the [plumber](action) [three days from now](datetime)
+- give notice at [11.24.2019. 1pm](datetime) about the [hole on the roof](action)
+- remind at 7 pm to [notify users of the server maintenance on monday](action)
+- buzz me to [add potatoes](action) at [9:30](datetime)
+- buzz me on [friday next week](datetime) to [teach daisy, daisy to melanie](action)
+- give me a buzz to [make chocolate ganache cake for larry's cousin](action)
+- give me a buzz at ... to [take the kids out for a walk](action)
+- buzz to [do some stretches](action)
+- buzz on [22/04](datetime) to [ask tim](action)
+- please notify me to [give out the forms to all the residents to inform them about the new fees](action) on [02/09 8 a.m.](datetime)
+- please notify me on [01.06.](datetime) to [delete all data from the stories that can be linked to the users](action)
+- please send me a notification at [nov 22 12 o’clock](datetime) to [notify the attorney about the cancellation of the 9 o'clock meeting](action)
+- please send me a notification at [15/09 5 pm](datetime) about the [yoga session with beck](action)
+- please give me a notification to [buy dog food](action) [11am tomorrow](datetime)
+- please give me a notification about the [dinner at mrs merryweather’s](action) at [7:00 pm](datetime)
+- please send me a reminder to [prep 4th of july snacks](action) at [midnight](datetime)
+- please send me a reminder [10:00 a.m.](datetime) to [remind mum to take her passport from the table](action)
+- please send me a reminder at [5:50pm](datetime) about the [cooking lesson](action)
+- please give me a nudge to [do stretches](action) at [4 o'clock](datetime)
+- please give me a nudge about [walking floofball](action) at [6 am tomorrow](datetime)
+- please give me a nudge [a week from now](datetime) about the [hike](action)
+- please tell me to [do paperwork for may the 21st conference](action) [7 o’clock the day after tomorrow](datetime)
+- please tell me at [9 p.m.](datetime) to [delete all evidence of birthday party plans](action)
+- please send me an alert to [tell staff the new rota](action) on [11/05 15 o'clock](datetime)
+- please send me an alert at [20:50](datetime) to [catch the last bus](action)
+- please send me an alert about the [dress fitting](action) on [31.09. 10 o'clock](datetime)
+- please send me an alert at [1:45 p.m.](datetime) about [planning the engagement party](action)
+- please give me an alert to [turn on the tv for the royal variety show](action) on [the 25th 8pm](datetime)
+- please give me an alert at [3pm](datetime) about the [patisserie fair](action)
+- please give me an alert at [2019. 22nd of february](datetime) about the [bingo evening with grandma](action)
+- please alert me to [message team about new dress code](action) on [11th oct 9 a.m.](datetime)
+- please alert me at [22nd of august](datetime) to [pay bills](action)
+- please send me a notice to [make crumpet dough](action) at [7:30 a.m.](datetime)
+- please send me a notice about the [call about the marshmallow sale](action) at [5 in the evening](datetime)
+- please send me a notice at [9am mon](datetime) about the [garage sale](action)
+- please give me a notice to [go to a hike with my lovely wife](action) at [6 o'clock sunday morning](datetime) 
+- please give me a notice [today](datetime) to [go to the gp](action)
+- please give me a notice at [4:00 p.m.](datetime) about the [harmonica practice](action)
+- please send a notification for [dinner at mom’s house](action) on [2019.08.08. 10 p.m.](datetime)
+- please send a notification on [11.22. 8 p.m.](datetime) about the [secret meeting](action)
+## intent:delete_reminder
+- delete reminder for [buyin presents](action) [9am tomorrow](datetime)
+- delete the reminder at [20:45](datetime) to [give the cat dinner](action)
+- delete reminder about the [dinner with geoffrey](action) at [9:00 pm](datetime)
+- delete reminder at [7am](datetime) about the[meeting with the finance team](action)
+- delete reminder to [stretch](action) at [5 o'clock](datetime)
+- delete reminder for [dinner with lady kate](action) on [2019.08.08. 10 p.m.](datetime)
+- delete reminder about my [date with natasha](action) for [10 pm monday](datetime)
+- the reminder for [today](datetime) to [go to the dentist](action) is no longer needed
+- the a reminder to [turn off oven](action) at [quarter past 11](datetime) is no longer needed
+- my reminder for [walking the dog](action) at [8 am today](datetime) is no longer needed
+- my reminder at [6:30am](datetime) for [band practice](action) is no longer needed
+- please delete my reminder to [pull carrots](action) [7 a.m. the day after tomorrow](datetime)
+- please delete my reminder on [tuesday](datetime) to [make snacks for robbie](action)
+- please delete my reminder about the [meeting with christian anderson](action) at [9 o'clock thursday morning](datetime)
+- please delete my reminder at [15/09 5 am](datetime) about the [sunrise meditation](action)
+- delete my reminder please to [create mailing template](action) on the [10_29_2022](datetime)
+- delete notification to [tell the morning shift how the new production line will work](action) [11/05 8 o'clock](datetime)
+- delete notification on the [21st of july](datetime) to [bring home cat and dog from the kennel in darcy](action)
+- delete my notification to [write down the action plan for the workshop on the 8th](action) on [2022. 4th november](datetime)
+- delete my notification at [02:15pm](datetime) to [eat](action)
+- delete my notification about the [visit from mum](action) at [10 o'clock monday](datetime)
+- i no longer need my notification [a week from now](datetime) about the [drinks with peter](action)
+- i no longer need my notification to [message whole team about the meeting's new appointment](action) on [24th of september 9 a.m.](datetime)
+- i no longer need my notification at [4 p.m.](datetime) to [delete stuff before 5th of november on google drive](action)
+- i no longer need my notification about [deleteing the skype invite to david mcarthur](action) at [9 a.m.](datetime)
+- delete my notification at [4:20 p.m.](datetime) about [swimming practice](action)
+- delete my reminder to [go to a run with hubby](action) at [7 o'clock saturday morning](datetime)
+- delete my reminder at [05:05](datetime) to [take out the chicken of the oven](action)
+- delete my reminder about the [evening run](action) on [saturday](datetime)
+- delete my reminder on [2019. 2nd of december](datetime) about my [english lesson](action)
+- delete my nudge to [lay out all grilling equipment for the 4th of july party](action) at [1:00pm](datetime)
+- delete my nudge at [22:55](datetime) to [go to sleep](action)
+- delete my nudge about the [dress rehearsal](action) on [22.11. 10 o'clock](datetime)
+- delete my nudge at [9:00am](datetime) about the [gas bill](action)
+- don't tell me to [visit my grandma](action) [tomorrow night](datetime)
+- don't tell me on the [22nd of august](datetime) to [pay bills](action)
+- delete my alert to [get confirmation of the meeting at 6 on the 14th of april](action) on [2022-11-19 4 pm](datetime)
+- delete my alert at [10 past noon](datetime) to [ring karrie](action)
+- delete my alert about the [call for mary](action) at [2 in the afternoon](datetime)
+- delete my alert at [9pm thursday](datetime) about the [breakfast at the teahouse](action)
+- delete my alert to [lay out agenda for every table in the auditorium](action) on the [10 a.m. 23rd of november](datetime)
+- delete my alert at [3 o'clock in the morning next saturday](datetime) to [tell tom to start the stream](action)
+- delete my alert about the [brainstorming session](action) at [13:00](datetime)
+- delete my alert at [4:00 p.m.](datetime) about the [guitar lesson](action)
+- don't alert me to [give car keys to javier](action) at [03:50 pm](datetime)
+- don't alert me [9:25](datetime) to [start spectography](action)
+- i no longer need my notice to [delete 2019.11.22. appointments](action) at [3 pm](datetime)
+- i no longer need my notice at [6 o'clock in the evening](datetime) to [get the red dress from the dry cleaner's for daisy](action)
+- delete my notice about my[obgyn appointment](action) at [8 am](datetime)
+- delete my notice on [11.22. 10 p.m.](datetime) about the [shipment of flour](action)
+- delete my notice to [delete stuff from pendrive](action) at [7:00 am](datetime)
+- delete my notice at [11 p.m. saturday](datetime) to [print guest list for jake and rosa's wedding](action)
+- delete my notice about the [tea party](action) on [22.11.](datetime)
+- delete my notice on [25/04/2020](datetime) about the [invitations](action)
+- delete the notification to [remind mr mallory about the dinner at 6](action) at [7:30 am](datetime)
+- delete the notification at [10 o'clock in the morning](datetime) to [delete e-mail to data science team about video the conference in the afternoon](action)
+- delete the notification about the [house painting](action) on [22nd of november, 2019.](datetime)
+- delete the notification at [6:00 pm](datetime) about the [house warming party at tess’s new appartment](action)
+- don't give a notification to [pay the gas bill](action) [5 o'clock in the evening](datetime)
+- delete the notification at [half to 9](datetime) to [delete manuscript to kevin](action)
+- delete the notification about the [magic mike audition](action) on [2019.09.25. 9 a.m.](datetime)
+- delete the notification at [5 in the evening](datetime) about the [cake taste testing](action)
+- delete a reminder to [order coffee](action) on [11.22.2019.](datetime)
+- delete a reminder at [7:40 am](datetime) to [iron the uniforms for nancy and tim for the jubilee](action)
+- delete a reminder about the [violin recital](action) on [2023-12-23 1pm](datetime)
+- delete a reminder on  about the
+- don't tell to [book the tickets for the phantom of the opera](action) on [01.01.](datetime)
+- don'ttell at [10 at night](datetime) to [look up all avengers movies](action)
+- delete an alert to [feed cat](action) at [quarter to 12](datetime)
+- delete an alert on [04.13.](datetime) to [delete the bad photos to free up space on camera](action)
+- delete an alert about the [practice](action) on [15/03 5 o'clock](datetime)
+- delete an alert on [10_11_2023 10 a.m.](datetime) about the [courier](action)
+- get rid of the alert to [leave work](action) at [8 o'clock at night](datetime)
+- get rid of the alert at [04.13. 10 pm](datetime) to [show concept to andy moore](action)
+- get rid of the alert about the [karate competition](action) on [10_11_2023 10 a.m.](datetime)
+- get rid of alert at [6 in the morning](datetime) about the [fair](action)
+- delete alert to [write e-mails](action) at [2 o'clock in the afternoon](datetime)
+- delete alert at [2020-12-08](datetime) to [coffee with boss](action)
+- delete the notice to [tell maisie the results](action) [tomorrow](datetime)
+- trash the notice on [10/05 6am](datetime) to [delete junk mail](action)
+- trash the notice about the [charity event](action) on [05-07-2019](datetime)
+- trash the notice on [2020/11/14 7 pm](datetime) about the [aca meeting](action)
+- delete the notice to [remind dad to wash the dishes](action)
+- delete the notice on [monday night](datetime) to [delete invitations](action)
+- delete the notice about the [maths olympics](action) on [2019. 18th of january](datetime)
+- delete the notice on [22 may 2020](datetime) about [speech therapy](action)
+- i want you to delete the reminder to [put away the laundry](action) [tomorrow morning](datetime)
+- i want you to delete my reminder at [10 past 1](datetime) to [flip the cake tins](action)
+- delete notification to [get rid of old clothes in the big wardrobe](action) at [10:30am](datetime)
+- delete notification at [2 o'clock in the afternoon wednesday](datetime) to [take books back to the library](action)
+- delete notification about the [appointment with dr. patel](action) [11:00](datetime)
+- delete notification on [25/04/2020 7am](datetime) about the [breakfast with mrs. cottage](action)
+- trash notification to [delete all work e-mails before december 24th](action) at [11:00](datetime) 
+- trash notification on [december 28 2019](datetime) to [trash all documents before december 24 2019.](action)
+- trash notification about the [team building livechat](action) at [11:35](datetime) 
+- trash notification on [2019/12/28](datetime) about the [rafting event](action)
+- get rid of reminder to [find folder](action) at [15:15](datetime)
+- get rid of reminder on [thursday morning](datetime) to
+- get rid of reminder about the [notify mr gail to renew his subscription](action)
+- get rid of reminder on [2022_05_03 5am](datetime) about the [bread dough](action)
+- i no longer need the nudge to [give baby joe his tummy medicine](action) at [noon](datetime)
+- i no longer need the nudge at [10:00 a.m.](datetime) to [remind mum to take her passport from the table](action)
+- i don't need the nudge about the [wash dishes](action) [in the morning](datetime)
+- i don't need the nudge [this wednesday](datetime) about the [baby shower](action)
+- trash alert to [start writing the essay](action) [in the evening](datetime)
+- trash alert at [16:20](datetime) to [take my pills](action)
+- delete alert about the [dinner with mother in law](action) [next tuesday](datetime)
+- delete alert on [01.01. 9pm](datetime) about the [appointment with the dog cosmetitian](action)
+- chuck out alert to [fill a page in my journal](action) [tomorrow evening](datetime)
+- chuck out alert [sunday afternoon](datetime) to [give back becky her shirt](action)
+- chuck out alert about the [driver’s exam](action) on [nov 22](datetime)
+- chuck out alert on [11.22.](datetime) about the [metacritic review](action)
+- trash alert to [confirm meeting with dress company on the 23rd at 5 pm](action) on [22nd of july 2019 9 am](datetime)
+- trash alert for [2021_03_23](datetime) to [get rid of all work e-mails before 2019_12_24](action)
+- delete notice to [ok the 2019.06.02. meeting with paul an co.](action) on [2019.11.24. 1pm](datetime)
+- delete notice on [05-06-2019 9 am](datetime) to [draw storyboard](action)
+- delete notice about the [pinata making workshop](action) on [02/09 4 p.m.](datetime)
+- don't remind to [take down the trash](action) [a day from now](datetime)
+- don't remind at 7 pm to [notify users of the server maintenance on monday](action)
+- please delete notification to [give out the forms to all the residents to inform them about the new fees](action) on [02/09 8 a.m.](datetime)
+- please delete notification on [01.06.](datetime) to [delete all data from the stories that can be linked to the users](action)
+- please delete my notification to [fill out notification form of address change to the uscis](action) at [07:45](datetime)
+- please delete my notification at [nov 22 12 o’clock](datetime) to [notify the attorney about the cancellation of the 9 o'clock meeting](action)
+- please delete my notification about the [double date with sammy and her friends](action) for [10 pm monday](datetime)
+- please delete my notification at [15/09 5 pm](datetime) about the [yoga session with beck](action)
+- please delete my reminder to [prep 4th of july snacks](action) at [midnight](datetime)
+- please delete my reminder [10:00 a.m.](datetime) to [remind mum to take her passport from the table](action)
+- please delete my reminder about the [meeting with mr frederick](action) at [10 in the evening thursday](datetime)
+- please delete my reminder at [5:50pm](datetime) about the [cooking lesson](action)
+- please don't tell me to [do paperwork for may the 21st conference](action) [7 o’clock the day after tomorrow](datetime)
+- please don't tell me at [9 p.m.](datetime) to [delete all evidence of birthday party plans](action)
+- please delete my alert to [tell staff the new rota](action) on [11/05 15 o'clock](datetime)
+- please delete my alert at [20:50](datetime) to [catch the last bus](action)
+- please delete my alert about the [dress fitting](action) on [31.09. 10 o'clock](datetime)
+- please delete my alert at [1:45 p.m.](datetime) about [planning the engagement party](action)
+- please delete my alert to [turn on the tv for the royal variety show](action) on [the 25th 8pm](datetime)
+- please delete my alert at [3pm](datetime) about the [patisserie fair](action)
+- please delete my alert about [deleteing the wedding invitations](action) at [19 o’clock](datetime)
+- please delete my alert at [2019. 22nd of february](datetime) about the [bingo evening with grandma](action)
+- please trash alert to [message team about new dress code](action) on [11th oct 9 a.m.](datetime)
+- please trash alert for [22nd of august](datetime) to [pay bills](action)
+- please delete my notice to [make crumpet dough](action) at [7:30 a.m.](datetime)
+- please delete my notice at [14:15pm](datetime) to [go to magic show](action)
+- please delete my notice about the [call about the marshmallow sale](action) at [5 in the evening](datetime)
+- please delete my notice at [4:00 p.m.](datetime) about the [harmonica practice](action)
+- please delete the notification for [dinner at mom’s house](action) on [2019.08.08. 10 p.m.](datetime)
+- please delete the notification on [11.22. 8 p.m.](datetime) about the [secret meeting](action)
+## intent:set_reminder_fallback
+- remind me
+- set reminder
+- set me a reminder
+- please remind me
+- remind me please
+- notify me 
+- give me a notification
+- send me a reminder
+- give me a nudge
+- poke me
+- tell me 
+- send me an alert
+- alert me 
+- send me a notice
+- give me a notice
+- send a notification
+- send a reminder
+- give a nudge
+- nudge me
+- nudge
+- send an alert
+- give an alert
+- alert
+- send a notice
+- give a notice
+- i want you to remind me 
+- send notification
+- send reminder
+- give alert
+- alert
+- send notice
+- give notice
+- remind
+- reminder
+- buzz me
+- give me a buzz 
+- please notify me 
+- please send me a notification
+- please give me a notification
+- please send me a reminder
+- please give me a nudge
+- please send me an alert
+- please give me an alert
+- please alert me
+- please send me a notice
+- please give me a notice
+- please send a notification
+- please give a notification
+- please send a reminder
+- please give a nudge
+- please send an alert
+- please give a notice
+- please send notification
+- please give notification
+- please send reminder
+## intent:delete_reminder_fallback
+- delete my reminder
+- delete reminder
+- please delete my reminder
+- delete my reminder please
+- delete notification
+- delete my notification
+- delete my nudge
+- delete my alert
+- don't alert me
+- delete my notice
+- delete a notification
+- don't give a nudge
+- delete an alert
+- get rid of alert
+- delete alert
+- delete a notice
+- trash a notice
+- delete a notice
+- i want you to delete a reminder
+- delete notification
+- trash notification 
+- get rid of reminder
+- i don't need a nudge
+- don't poke
+- trash alert
+- delete alert on
+- chuck out alert
+- trash alert
+- delete notice
+- don't remind
+- don't buzz me
+- delete my buzz
+- don't buzz
+- please delete my notification
+- please delete my reminder
+- please delete my nudge
+- please don't poke me
+- please don't poke
+- please delete my alert
+- please trash alert
+- please delete my notice
+- please delete the notification
+# Pleasantries
 ## intent:greet
 - hi
-- hey
-- hello
 - hi there
+- hey
 - hey there
+- hello
 - hello there
+- why hello
+- why hello there
+- hey man
+- hello man
+- hi man
+- start
+- get started
+- let's begin
+- begin
+- hey dude
+- hi dude
+- hello dude
+- good to see you
+- nice to see you
+- long time no see
+- it's been a while
+- nice to meet you
+- nice to see you
+- hello my friend
+- hey there friend
 - good morning
 - good afternoon
 - good evening
-- greetings
+- good day
+- hai
+- ohai
+- haithere
+- haidar
+- yo
+- yo dude
+- yo man
+- ahoi
+- aloha
+- ciao
+- blessed day
+- hi bud
+- hi mate
+- hi m8
+- hello buddy
+- hi buddy
+- hello bud
+- hi bud
+- hey dude
+- hi bro
+- hey bro
+- g'day
+- g'day mate
 - hola
-
-## intent:how_are_you
-- how are you
-- how are you doing
-- how you doing
-- how things are
-- how do you do
-- how's it hanging
-- how is it on your side
-- what's cookin, good lookin
-- howdy
-- hiya
-
-## intent:ask_reminder
-- remind me to [go to the dentist](action) at [9am](datetime)
-- remind me at [4 p.m.](datetime) to [start the pot roast](action)
-- tell me to [start exercising](action) at [17:30](datetime)
-- i would like to be reminded to [collect the contract from mr. davis' office](action) at [noon](datetime).
-- send me a reminder for [5 pm next thursday](datetime) to [take lucy to piano practice](action)
-- [midnight, the 25th of october,](datetime) i will have a [stargazing date with steve](action)
-- remind me to [light the candles](action) [10 minutes before sunset today](datetime)
-- set a reminder to [11 am on the 5th](datetime) to [get lana's dog from the beauty parlor](action)
-- remind me the [next tuesday](datetime) to [clean the woodshed](action)
-- remind me that i will have a [date with sam](action) at [9 o'clock in the evening](datetime) [the day before](datetime)
-- [2019.05.05 10 a.m.](datetime) i will have [breakfast with harry](action), remind me [an hour before](datetime)
-- notify me to [connect to the livestream](action) at [14:15 tomorrow](datetime)
-- give me a notice to [check on the kombucha](action) [a week from now](datetime)
-- notify me to [send irina the skype invite](action) at [8](datetime)
-
-## intent:delete_reminder
-- delete reminder for [lucy's birthday party](action)
-- don't remind me to [pick up brandon](action) at [midnight](datetime)
-- do not remind me to [send out the forms](action) [today at noon](datetime)
-- i no longer need the reminder for the [meeting](action) on [the 19th](datetime)
-- i no longer need to be reminded to [grab a coffee with jeff](action) at [8 on the 8th of June](datetime)
-- i don't need the reminder for the [date with steve](action) anymore
-- cancel the reminder to the [2019.11.14.](datetime) [appointment](action)
-- the [piano recital](action) was canceled
-- delete the reminder i set for the [baseball practice](action) [tomorrow morning](datetime)
-- get rid of the reminder for [next week](datetime)'s [metallurgy class](action)
-- remove the reminder you set for [yoga class](action) at [5 o'clock tomorrow](action)
-- don't send me a notice to [get to the bus station](action) at [7 o'clock](datetime)
-- do not notify me of the [meeting with the cleaning staff](action) [next morning](datetime)
-- delete the notification for [dress rehearsal at tina's high school](action) for [6 pm tomorrow](datetime)
-
-## intent:fallback
-- make me a coffee.
-- this is the beginning of a beautiful friendship.
-- no one competes with the rock cruncher.
-- my name is bond, james bond.
-- what buses go to the london eye from trafalgar square?
-- i ate his liver with some fava beans and a nice chianti.
-- the night was cold and humid, just like in all other gothic horror stories.
-- falcon punch!
-- i want to eat a burrito.
-- mrs. robinson, you're trying to seduce me.
-- find me recipes for strawberry souffle.
-- all work and no play makes johnny a dull boy.
-- get me a box of chocolate and a bouquet of flowers.
-- soylent green is people!
-- mind your steps.
-- a martini, shaken, not stirred.
-- this sentence is not meant to make any sense, yet it does.
-- nobody puts baby in the corner.
-- i am out of ideas and definitely in need of a sizable corpus.
-- of all the gin joints in all the towns in all the world, she walks into mine.
-
-## intent:affirmation
-- yes
-- yes, that is it
-- that's it
-- indeed
-- yes, i meant that
-- yup
-- yep
-- u-huh
-- mh-hmm
-
-## intent:negation
-- no
-- nope
-- na
-- naw
-- i meant something else
-- you've got it wrong
-- noop
-- nu-uh
-
-## intent:thanks
-- thank you
-- thanks
-- thx
-- ty
-- thank you very much
-- thank you so much
-- many thanks
-- thanks a lot
-- thanks a bunch
-- ta
-- you are awesome
-- you are a lifesaver
-
-## intent:insult
-- you are bad
-- now I am angry
-- you are making me angry
-- that is infuriating
-- you are awful
-- stop that
-- now you are just repeating yourself
-- you suck at this
-- i've had enough
-- i hate you
-- you are stupid
-- you are dumb
-- this sucks
-- damn you
-- you goddamn robot
-- go to hell
-- you are a cunt
-- you son of a bitch
-- fuck yourself
-- fuck you
-- kill yourself
-
-## intent:escalate
-- i would like to talk to a human.
-- do you have anybody else I can talk to?
-- can i talk to someone else?
-- point me to someone more competent.
-- let me speak to a human.
-- i want to contact customer service
-- is there anyone else who can help?
-- is there anyone more qualified?
-
+- hola amigo
+- bonjour
+- bon jour
+- bonjour mon ami
+- bon jour mon ami
+- greetings
+- are you there
+- are you still out there
+- where are you
 ## intent:goodbye
 - bye
 - bye bye
 - bye-bye
+- b-bye
+- buh-bye
 - goodbye
+- see ya
 - see you later
 - talk to you later
 - catch you later
-- see ya
 - take care
-- adios
-- ciao
+- be safe
+- stop
+- end
+- i'm going now
+- i have to go now
+- gotta go
+- i'll leave now
+- i'll take my leave
+- see you
+- see you later
+- have a nice day
+- have a great day
+- nice day to you
+- good day to you
+- good day, sir
+- farewell
+- farewell, kind sir
 - peace
 - peace out
+- smell you later
+- sayonara
+- arrivederci
+- adios
+- adios amigo
+- adios muchacho
+- hasta la vista
+- godspeed
+- good night
+- g'night
+- bai
+- ta-ta
+- brofist
+- dismissed
+- we need to part
+## intent:thanks
+- thank you
+- thank you very much
+- thank you so much
+- thank you for your help
+- thanks
+- thanks a lot
+- thanks a bunch
+- thank you, kind sir
+- thanks for the help
+- much obliged
+- that's kind of you
+- thanks man
+- bless you
+- cheers
+- awesome
+- awesome, thanks
+- cool
+- super cool
+- mega cool
+- cool, thanks
+- cool, thank you
+- sweet
+- super sweet
+- mega sweet
+- sweet, thank you
+- sweet, thanks
+- thankies
+- ty
+- tks
+- thanx
+- thx
+- thnx
+- ta
+- kthx
+- kthxbye
+- kthanksbye
+- kthanksbai
+- kthnxbai
+- kthxbai
+- tysm
+- tyvm
+- you are a lifesaver
+- you are awesome
+- i owe you one
+- you are too kind
+- hat tip
+- good looking out
+- gracias
+- arigatou
+- arigatou kosaimasu
+- muchas gracias
+- much grass
+- i appreciate that
+- preash
+- spanks
+- spanx
+## intent:affirm
+- yes
+- yes, please
+- yep
+- yup
+- iyyup
+- yeah
+- yea
+- u-huh
+- aha
+- mh-hmm
+- yas
+- do it
+- do that
+- yes, do that
+- alright
+- indeed
+- that's it
+- that's right
+- you're right
+- perfect
+- precisely
+- very well
+- okay
+- ok
+- a-okay
+- a-ok
+- okey
+- okey-dokey
+- sure
+- for sure
+- fo sho
+- fo shizzle
+- that's what i meant
+- yes, i meant that
+- that's what i want
+- do that
+- oui
+- si
+- si-si
+- yes, my friend
+- true
+- true dat
+- indubitably
+- by all means
+- affirmative
+- aye-aye
+- righto
+- yuppers
+- ja
+- amen
+- right on
+- yessir
+- copy that
+- yessuree
+- ai ai
+- ai ai captain
+## intent:negate
+- no
+- nope
+- na
+- nah
+- naw
+- nay
+- nevermind
+- uh-uh
+- nuh-uh
+- no way
+- nix
+- nixie
+- negative
+- veto
+- out of the question
+- no sir
+- that's not it
+- not true
+- that's not what i meant
+- that's not what i want
+- that's not it
+- i meant something else
+- i want something else
+- you've got it wrong
+- forget it
+- hell no
+- hell naw
+- hell to the no
+- noop
+- you're wrong
+- wrong
+- i didn't say that
+- what
+- redo
+- try again
+- try harder
+- wrong answer
+## intent:aggravate
+- you are bad
+- why are you so bad
+- why won't you work
+- why are you not working
+- why won't this work
+- that was bad
+- that was dumb
+- that was stupid
+- i'm not satisfied
+- i'm not happy
+- i'm angry
+- i'm very angry with you
+- i'm furious
+- now i am angry
+- you are making me angry
+- you've made me angry
+- this is infuriating
+- just do your job
+- just work already
+- just do your thing
+- get out
+- leave me alone
+- leave me to be
+- work already
+- have mercy
+- lord, have mercy
+- please
+- work please
+- lord help me
+- god help me
+- i swear to god
+- just work
+- just do your thing
+- work
+- work, damn it
+- work, dammit
+- damn
+- dammit
+- darn it
+- god damn it
+- goddamn
+- gosh darn
+- please, work already
+- what the hell
+- what the hell are you doing
+- you are awful
+- eat my shorts
+- stop that
+- now you are just repeating yourself
+- you suck at this
+- you suck
+- i've had enough
+- i hate you
+- you are stupid
+- you are dumb
+- you dumb
+- you stupid
+- this sucks
+- shit
+- what the hell
+- what the fuck
+- wth
+- wtf
+- get lost
+- you stink
+- damn you
+- you goddamn robot
+- go to hell
+- burn in hell
+- you are a cunt
+- bitch
+- you son of a bitch
+- you've fucked up
+- you fucked up
+- fuck yourself
+- eat shit
+- fuck you
+- fuck this
+- fuck me
+- fuck
+- i'll break you in two
+- i'll smash you into pieces
+- i'll smash you into bits
+- i want to kill you
+- i'll kill you
+- kill me
+- kill yourself
+- hulk smash
+## intent:escalate
+- i would like to talk to a human
+- i want to speak to somebody
+- do you have anybody else i can talk to
+- can i talk to someone else
+- point me to someone more competent
+- let me speak to a human
+- connect me to a human
+- can someone help me
+- please, connect me to your creator
+- let me talk to the developer
+- let me talk to your developer, please
+- human, please
+- contact human
+- contact operator
+- contact customer service
+- contact developer
+- i want to contact customer service
+- is there anyone else who can help
+- is there anyone more qualified
+- developer address
+- developer e-mail
+- give me a mail address
+- please send a message to the developer
+- i want to message the developer
+- i need human intervention
+- request human operator
+- anybody else i can contact
+- is there a customer service
+- give feedback
+- i want to break free
+- let me out
+- let me out of here
+## intent:tutorial
+- what is your purpose
+- what can you do
+- can you help me
+- do you have a tutorial
+- tutorial
+- tutorial please
+- how do you work
+- how does this work
+- help me find out how you work
+- please tell me what you can do
+- what are you capable of
+- getting started
+- do you have a guide
+- user's guide
+- walk me through the process
+- how can i set a reminder
+- how can i delete a reminder
+- help me set a reminder
+- help me delete a reminder
+- what kind of parameters you need
+- how do i set a reminder
+- how do i delete a reminder
+- what date format do you use
+- how to tell you what to do
+- how does setting a reminder work
+- how does deleting a reminder work
+- what do i do
+- what should i do
+- how do i make you work
+- how do i tell you the time correctly
+- how do you handle time
+- proper time format
+- time format for reminder
+- why are you not working
+- why can't you set a reminder
+- why can't you delete my reminder
+- what went wrong
+- you are not working
+- this is not working
+- i am in trouble
+- you are in trouble
+- how can you help me
+- what is your job
+- what are your duties
+- correct way to set reminder
+- correct way to delete reminder
+- time and date format
+- tell me how you work
+- tell me how to set a reminder
+- tell me how to delete a reminder
+- why are you not working
+- what functions do you have
+- datetime format
+- what to do for best results
+- best practice
+- how can i help you not to fail
+- i need some help
+- user manual
+- give me a rundown
+- give me a walkthrough
+- user tour
+- give me the tour
+- show me around
+- show me how you work
+- show me what you got
+- please help me understand you
+- what tasks can you perform
+- correct usage
+- how can i use you correctly
+- help me
+- help
+- user help
+- show help
+- i need assistance
+- give me a hand
+- i cannot make this work
+- i cannot make you work
+- i'm confused
+- help, i got confused
+- you are making me confused
+- what are you here for
+- what is your job description
+- what are you here for
+- tell me about you
+- i want to get to know you
+- introduce yourself
+- show introduction
+- who are you
+- what do you do
+- what are you
+- first time user
+- i'm using you for the first time
+- i'm new to this
+- i'm kind of clueless now
+- give me a hint
+# Fun
+## intent:how_are_you
+- how are you
+- how do you do
+- how are you doing
+- how you doing
+- how things are
+- how's it hanging
+- are you alright
+- are you ok
+- is everything alright
+- is everything okay
+- how are you man
+- how are you dude
+- how are you mate
+- what's up
+- how's it going
+- what's new
+- what's going on
+- how's everything
+- how are things
+- how've you been
+- how are you going
+- how's your day going
+- what's good
+- allright mate
+- you alright dude
+- what's the status
+- how is my favourite bot
+- how is my bot doing today
+- how are you doing today
+- what has been going on lately
+- how have you beed
+- are you doing good
+- doing good
+- how's life
+- how's life been treating you
+- how is it on your side
+- what's cracking
+- how are things with you
+- how's life
+- how's your day
+- what've you been up to
+- what you've been up to
+- just checking in
+- just checking up on you
+- howdy doodie
+- what up man
+- what up dude
+- what up dawg
+- sup
+- wazzup
+- whazzup
+- whassap
+- wassap
+- hiya
+- howdy
+- sup m8
+- sup man
+- sa man
+- sa dude
+- sup dude
+- sup bro
+- how is my man
+- what up man
+- whats cookin good lookin
+- run a diagnostic
+- status
+- status report
+## intent:joke
+- tell a joke
+- tell me a joke
+- tell me some jokes
+- do you know any jokes
+- make me laugh
+- i want to laugh
+- do you have any jokes
+- any good jokes
+- are you funny
+- can you tell a joke
+- jokes, please
+- humor me
+- got any fun stuff
+- do you have a sense of humor
+- i like bots with a sense of humor
+- be funny
+- lets joke around
+- lets tell some jokes
+- i've had a bad day
+- i'm having a bad day
+- my day was horrible
+- such a horrible day
+- i'm sad
+- i'm feeling bad
+- i'm feeling awful
+- i need some of your jokes
+- tell me some of your jokes
+- tell me a joke of yours
+- they say you can tell jokes
+- someone said you are funny
+- i've heard you know some jokes
+- i feel like hearing a joke
+- any jokes
+- joke
+- cheer me up
+- i'm bored
+- give me some fun
+- i want to have some fun
+- are you a funny boy
+- entertain me
+- i want some entertainment
+<!--## intent:small_talk-->
+
+# Synonyms: abbreviations
+## synonym:i'm
+- i am
+## synonym:what's
+- what is
+## synonym:how's
+- how is
+## synonym:don't
+- do not
+## synonym: doesn't
+- does not
+## synonym:won't
+- will not
+## synonym:wouldn't
+- would not
+## synonym:you've
+- you have
+## synonym:what've
+- what have
+## synonym:how've
+- how have
+## synonym:i've
+- i have
+## synonym:you've
+- you have
+## synonym: ok
+- okay
+## synonym: ya
+- you
+## synonym:that's
+- that is
+## synonym:i'll
+-i will
+## synonym:can't
+- cannot
+
+# Regex
+## regex:greet
+- [\w,]* noam
+## regex:tutorial
+- can you (\w* *)* 
+## regex:datetime
+<!--Time-->
+-(\d{1,2}:\d{1,2})?(\d*:*\d+ *(a|p)\.*m\.*) <!-- digital clock format AND am or pm, basically the mix of \d{1,2}:\d{1,2} (digital clock) and \d*:*\d+ *(a|p)\.*m\.* (am or pm)-->
+-(quarter|half|\d{1,2}) (past|to) \d{1,2}<!-- quarter or half past or to something, like quarter to 9, only works with the special intervals and numbers (not phrases like ten past twelve), -->
+- \d{1,2} o'clock( (in the|at) (morning|afternoon|evening|night))?<!-- something o'clock (optionally at a certain part of the day) -->
+
+<!-- Should I need to merge these:
+(\d{1,2}:\d{1,2})?(\d*:*\d+ *(a|p)\.*m\.*)?((quarter|half|\d{1,2}) (past|to) \d{1,2})?(\d{1,2} o'clock( (in the|at) (morning|afternoon|evening|night))?)?
+Monster regexp to the rescue! Holy Stallman! -->
+
+<!--Date-->
+- (\d{4}(\W|_))?\d{2}(\W|_)\d{2}(\W|_)(\d{4}\W)?<!-- The most popular datetime formats (yyyy/mm/dd and dd/mm/yyyy is the ones I intend to recognize) with various stop characters -->
+- (( \d{4}\W* )?\d{1,2}(st|nd|rd|th)?( of)? (?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(, \d{4}\W)?)?((\d{4}\W)?(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?) \d{1,2}(st|nd|rd|th)?\b)?( \d{4}\W* )? 
+<!-- Mega regexp to catch nth of month with optional year in most formats-->
+
+<!--It consists of
+
+Nth day of a month with optional year at the front or end
+
+\d{4}\W* for the year with various stop characters
+\d{1,2}(st|nd|rd|th)? to handle the date
+(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?) for the names of the months in full and abbreviated formats
+
+Together:
+(\d{4}\W* )?\d{1,2}(st|nd|rd|th)? (of)? (?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(,* \d{4}\W* )?
+
+AND
+
+The same as before, but with yyyy/dd/mm format
+(\d{4}\W* )?(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?) \d{1,2}(st|nd|rd|th)?\b
+-->
+- (mon|tues|wed(nes)?|thur(s)?|fri|sat(ur)?|sun)(day)?<!-- days of the week -->
+- (the (day after))?( today|tomorrow)?<!-- Handling the forseeable three days -->
