@@ -5,6 +5,14 @@ import datetime
 from datetime import timedelta
 import re
 
+class SetReminder(Action):
+    def name(self):
+        return "ask_reminder"
+
+    def run(self, dispatcher, tracker, domain):
+        response = "Let's pretend I have set a reminder, shall we?"
+        dispatcher.utter_message(response)
+
 class SummarizeReminder(Action):
     def name(self):
         return "summarize_reminder"
@@ -16,12 +24,18 @@ class SummarizeReminder(Action):
         dispatcher.utter_message(response)
         return [SlotSet("action", action)]
 
-class SetReminder(Action):
+class ReassureReminder(Action):
+# Send the name of action
     def name(self):
-        return "set_reminder"
+        return "reassure_reminder"
 
     def run(self, dispatcher, tracker, domain):
-        return [ReminderScheduled("reminder_alarm", datetime.datetime.now() + timedelta(seconds=10))]
+# Get the entities.
+        datetime = tracker.get_slot("datetime")
+# Tell the user what they will be reminded to do.
+        response = "Sure thing! Reminder set for the following time: {} ".format(datetime)
+        dispatcher.utter_message(response)
+        return [SlotSet("datetime", datetime)]
 
 class ReminderAlarm(Action):
     def name(self):
@@ -32,18 +46,32 @@ class ReminderAlarm(Action):
         dispatcher.utter_message(response)
         return [SlotSet("action", action)]
 
-class ReassureReminder(Action):
-# Send the name of action
+class DeleteReminder(Action):
     def name(self):
-        return "reassure_reminder"
-
+        return "delete_reminder"
     def run(self, dispatcher, tracker, domain):
-# Get the entities.
+        response = "Reminders are still imaginary. So let's imagine I've just deleted this one.".format(action)
+        dispatcher.utter_message(response)
+
+class SummarizeDeleteReminder(Action):
+    def name(self):
+        return "summarize_delete_reminder"
+    def run(self, dispatcher, tracker, domain):
         action = tracker.get_slot("action")
-# Tell the user what they will be reminded to do.
-        response = "Sure thing! I will remind you to {} in 10 seconds".format(action)
+        datetime = tracker.get_slot("datetime")
+        response = "You want me to delete the reminder for {} that was set for {}. Is that true?".format(action, datetime)
         dispatcher.utter_message(response)
         return [SlotSet("action", action)]
+
+class ReassureDeleteReminder(Action):
+    def name(self):
+        return "reassure_delete_reminder"
+    def run(self, dispatcher, tracker, domain):
+        action = tracker.get_slot("action")
+        datetime = tracker.get_slot("datetime")
+        response = "I will delete the reminder for {}.".format(datetime)
+        dispatcher.utter_message(response)
+        return [SlotSet("datetime", datetime)]
 
 # class Fallback(Action):
 #     def name(self):
