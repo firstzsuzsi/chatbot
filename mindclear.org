@@ -37,22 +37,99 @@ Learn from mistakes and gather extra training data for future reference
 ** DEEPEN (NegEx based)
 - Adds dependency relations to improve upon the stuff
 * Noam structure
-** Spellcheck
-** Programmed buttons
-** Use fallback policy (instead of fallback intent)
-** Refine action structure
-*** set reminder
-Use the builtin RASA reminder system
-*** delete reminder
-See if deletion is possible in builtin stuff
-*** summary
-It should use the entities and form an utterance based on them, preferably multiple ones, at random.
-*** escalate to human
-** Give personality
-- likes to help
-- ambitious
-- looks at everything as a learning opportunity
-- curious
-- likes to make chores fun (has a cute way of reminding that will help you to actually do the stuff you set out).
-- knows some jokes
-- can do small talk (but makes it more interesting by turning the schemes upside down)
+** Run script
+- a component of a python code, made into a shell code run with python in a shell script (see to make that more simple)
+** Training
+- again, part of a python code etc. but I can use a python script utilizing the python model
+** Testing
+- I can only use my python script, wonder why they haven't bashify it (or if they have)
+- I have a script that feeds lines into the interpreter, for it to determine intents and entities
+- I have a script in the making that uses jq to convert the JSON result of the interpreter into a csv so I will be able to better monitor the results of batch testing
+- the bot can be used from the command line, there is a debug mode where I will get actual python error messages if something goes awry
+- there is an interactive trainer that takes in lines, and breaks down the actions the chatbot makes in response to them. Finally it can save the resulting dialogs as stories for further dialog training, stripped from the actual lines fed in, retaining the important bits (intents, entities, content of slots)
+** Model
+- I use spaCy, a NLP library with various use cases (anything entailing lemmatization, tokenization, spellcheck, named entity recognition etc.)
+- it has pretrained models in various languages (Hungarian, too, though it is not official), capable of recognizing entities like location, people etc. These models are tweaked and supplemented by bespoke entities (how?).
+** Domain
+** Stories
+** Todo
+*** Spellcheck
+*** Programmed buttons
+*** Use fallback policy (instead of fallback intent)
+*** Give personality
+ - likes to help
+ - ambitious
+ - looks at everything as a learning opportunity
+ - curious
+ - likes to make chores fun (has a cute way of reminding that will help you to actually do the stuff you set out).
+ - knows some jokes
+ - can do small talk (but makes it more interesting by turning the schemes upside down)
+*** Refine action structure
+**** set reminder
+- use at daemon
+- find python modules or bash commands to convert text to datetime format that is compatible with at daemon's
+**** delete remindera
+- at daemon, again
+**** summary
+- convert the detected entities so they will fit with human conversational expectations while staying informative (convert my to your and vice versa, say clearly the date and the time when the reminder will be, unless it is the day the reminder is made, or the next day)
+**** escalate to human
+- simulate somehow in the command line?
+*** Make it multilingual
+- can I use channels or do I need to use models in tandem?
+*** Tweak the hyperparameters
+- dockerify the whole bot to do that
+*** Tell user if they have a reminder already set for that appointment
+*** Learn from previous conversations
+* Concepts
+** word embedding (the vectorization of concepts, which is the coolest thing)
+** nlp and linguistics
+*** tokenization
+*** lemmatization
+*** intent classification
+*** entity extraction
+*** sentiment analysis
+*** generative grammar
+** nlp and maths
+*** feature extraction
+*** linear models
+*** hashing trick
+** the statistical background of machine learning
+*** gradient descent
+*** recall vs precision
+*** f1 score
+*** 
+** basics of machine learing
+*** bag of words model
+** hyperparameters
+** containerization
+* Elements
+** scikit-learn
+Classification
+Identifying to which category an object belongs to.
+Applications: Spam detection, Image recognition.
+Algorithms: SVM, nearest neighbors, random forest...
+
+Regression
+Predicting a continuous-valued attribute associated with an object.
+Applications: Drug response, Stock prices.
+Algorithms: SVR, ridge regression, Lasso...
+
+Clustering
+Automatic grouping of similar objects into sets.
+Applications: Customer segmentation, Grouping experiment outcomes
+Algorithms: k-Means, spectral clustering, mean-shift...
+
+Dimensionality reduction
+Reducing the number of random variables to consider.
+Applications: Visualization, Increased efficiency
+Algorithms: PCA, feature selection, non-negative matrix factorization.
+
+Model selection
+Comparing, validating and choosing parameters and models.
+Goal: Improved accuracy via parameter tuning
+Modules: grid search, cross validation, metrics.
+
+Preprocessing
+Feature extraction and normalization.
+Application: Transforming input data such as text for use with machine learning algorithms.
+Modules: preprocessing, feature extraction.
